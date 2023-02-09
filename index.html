@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/> -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -11,107 +12,230 @@
     <link rel="icon" href="res/icon.ico">
     <title>Charles Wang</title>
     <link href="cgb.css" rel="stylesheet" type="text/css">
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- <script src="js/jquery-1.8.0.js"></script> -->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body id="page-top">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <a class="navbar-brand" href="#page-top">Welcome!</a>
+          <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fas fa-bars"></i>
           </button>
-          <a class="navbar-brand" href="#">Welcome!</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#projects">Projects & Research</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">Home</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#umich">UMich</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#personal">Personal</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+              </ul>
+          </div>
       </div>
-    </nav>
+  </nav>
 
-    <div class="container" id="nav-container">
-      <!-- <div class="shift-down"> -->
-      <table border="0" width="700" height="100">
-        <tbody>
-          <tr>
-            <td>
-              <div style="height: 250px"><img src="res/pro_pic.jpg" style="height:100%"></div>
-            </td>
-            <td>
-              <p><font size="7">Charles Wang</font></p>
-              <p>Undergraduate Computer Science Engineering Student<br>
-                <a href="http://www.cse.umich.edu/">Computer Science Engineering</a><br>
-                <a href="http://www.engin.umich.edu/">College of Engineering</a><br>
-                <a href="http://www.umich.edu/">University of Michigan</a>
-              </p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <a name="projects"></a> 
-      <p><a href="https://github.com/cvwang/">Github</a></p>
-      <p><a href="https://www.linkedin.com/in/cvwang">LinkedIn</a></p>
-      <p><a href="res/resume.pdf">Resume</a></p>
-      <p><a href="https://cvwang.substack.com/">Substack</a></p>
-      <p><strong>HI CARMINA 2/8/23. Good morning!!! 😁❤️</strong></p>
-      <p><strong>UROP Research</strong></p>
-      <ul>
-        <li>
-          Designed <a href="https://github.com/cvwang/SeqUMich">software</a> that indexes thousands of cancer patients' genomes to quickly determine if a given DNA mutation sequence is contained throughout the genome database.
-          <ul>
-            <li><a href="https://drive.google.com/file/d/0B2Oq1o2MAfu_eEY1dFN3S1JjQms/edit">Research poster link</a>
-          </ul>
-      </ul>
-      <p><strong>Projects</strong></p>
-      <ul>
-        <li> Twerating - Implemented Machine Learning techniques to tackle the sentiment analysis problem. Our team developed a movie rating system that pools and processes Twitter tweets to provide a truly accurate and unbiased movie rating. <a href="res/ml_paper.pdf">Paper</a> and <a href="res/ml_poster.pdf">poster</a>.</li>
-        <li>Tech Team Director at <a href="https://mpowered.umich.edu/">MPowered Entrepreneurship</a> - Overseeing development of our organization's first <a href="https://play.google.com/store/apps/details?id=edu.umich.mpowered.mpowered">Android</a> and <a href="https://itunes.apple.com/us/app/mpowered-entrepreneurship/id1039674962">iOS</a> apps.</li>
-        <li>Built an <a href="cube.html">8x8x8 LED Cube</a> and programmed an FPGA board in assembly to graph two-variable functions (team of four).</li>
-        <li>Built an <a href="http://www.youtube.com/watch?v=CIx559oaiVE">automated vinyl record cleaner</a> for my senior project (team of two).</li>
-        <li>For my Stanford summer engineering design course, I built a <a href="http://www.youtube.com/watch?v=28SGvFchyhs">portable MP3 player</a> (individual).</li>
-      </ul>
-      <p><strong>Hobbies & other things</strong></p>
-      <ul>
-        <li>
-          Short videos for film class during high school:
-          <ul>
-            <li><a href="http://youtu.be/OxECBpSXmow">Winner</a></li>
-          </ul>
-        </li>
-      </ul>
-      <br>
-      <a name="contact"></a> 
-      <!-- MAIL SECTION -->
-      <p><strong>Contact</strong></p>
-      <form method=POST action="http://www.umich.edu/cgi-bin/htmail/cvwang@umich.edu">
-        <input type="text" placeholder="First" name="First name" />
-        <input type="text" placeholder="Last" name="Last name" />
-        <br><br>
-        <input type="text" placeholder="Email" name="from" />
-        <br><br>
-        <input type="text" placeholder="Subject" name="subject" />
-        <br><br>
-        <input name=ccme type=checkbox checked> Send me a copy of this message
-        <p>
-          <textarea placeholder="Message" name="body" rows="10" cols="90"></textarea>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container d-flex align-items-center flex-column">
+          <!-- Masthead Avatar Image-->
+          <img class="masthead-avatar mb-5" src="res/pro_pic.jpg" alt="..."/>
+          <!-- Masthead Heading-->
+          <h1 class="masthead-heading text-uppercase mb-0">Charles Wang</h1>
+          <!-- Icon Divider-->
+          <!-- <div class="divider-custom divider-light">
+              <div class="divider-custom-line"></div>
+              <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+              <div class="divider-custom-line"></div>
+          </div> -->
           <br>
-          <input type="submit" value="SEND" />
-        </p>
-      </form>
-      </li>
-    </div><!-- /.container -->
+          <!-- Masthead Subheading-->
+          <p class="masthead-subheading font-weight-light mb-0">
+            MBA Candidate @ Chicago Booth
+          </p>
+          <br>
+          <p class="masthead-subheading font-weight-light mb-0">
+            <a href="https://www.linkedin.com/in/cvwang"><img src="res/linkedin.png" width="30" height="30"/></a>
+            <a href="https://github.com/cvwang/"><img src="res/github.png" width="30" height="30"/></a>
+            <a href="res/Charles Wang Resume.pdf"><img src="res/resume.png" width="30" height="30"/></a>
+          </p>
+      </div>
+    </header>
+
+    <!-- UMICH SECTION -->
+    <section class="page-section mb-0" id="umich">
+      <div class="container">
+        <!-- Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase">University of Michigan</h2>
+        <!-- <h2 class="page-section-heading text-center text-uppercase">UMICH</h2> -->
+        <br>
+        <!-- Section Content-->
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <!-- <p><h4><u>Computer Science Engineering Undergraduate @ The University of Michigan</u></h4></p> -->
+            <p>Computer Science Engineering Undergraduate @ The University of Michigan</p>
+            <p><strong>Projects</strong></p>
+            <ul>
+              <li> Twerating - Implemented Machine Learning techniques to tackle the sentiment analysis problem. Our team developed a movie rating system that pools and processes Twitter tweets to provide a truly accurate and unbiased movie rating. <a href="res/ml_paper.pdf">Paper</a> and <a href="res/ml_poster.pdf">poster</a>.</li>
+              <li>Tech Team Director at <a href="https://mpowered.umich.edu/">MPowered Entrepreneurship</a> - Overseeing development of our organization's first <a href="https://play.google.com/store/apps/details?id=edu.umich.mpowered.mpowered">Android</a> and <a href="https://itunes.apple.com/us/app/mpowered-entrepreneurship/id1039674962">iOS</a> apps.</li>
+              <li>Built an <a href="cube.html">8x8x8 LED Cube</a> and programmed an FPGA board in assembly to graph two-variable functions (team of four).</li>
+            </ul>
+            <p><strong>UROP Research</strong></p>
+            <ul>
+              <li>
+                Designed <a href="https://github.com/cvwang/SeqUMich">software</a> that indexes thousands of cancer patients' genomes to quickly determine if a given DNA mutation sequence is contained throughout the genome database.
+                <ul>
+                  <li><a href="https://drive.google.com/file/d/0B2Oq1o2MAfu_eEY1dFN3S1JjQms/edit">Research poster link</a>
+                </ul>
+            </ul>
+          </div> 
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- PERSONAL SECTION -->
+    <section class="page-section mb-0" id="personal">
+      <div class="container">
+        <!-- Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase">Personal</h2>
+        <br>
+        <!-- Section Content-->
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <p><strong>Projects</strong></p>
+            <ul>
+              <li>Built an <a href="http://www.youtube.com/watch?v=CIx559oaiVE">automated vinyl record cleaner</a> for my senior project (team of two).</li>
+              <li>For my Stanford summer engineering design course, I built a <a href="http://www.youtube.com/watch?v=28SGvFchyhs">portable MP3 player</a> (individual).</li>
+            </ul>
+            <p><strong>Hobbies & other things</strong></p>
+            <ul>
+              <li>
+                Short videos for film class during high school:
+                <ul>
+                  <li><a href="https://vimeo.com/31748605">Colorless</a> - Accepted by New England Student Film Festival</li>
+                  <li><a href="http://youtu.be/OxECBpSXmow">Winner</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="page-section mb-0" id="contact">
+      <div class="container">
+        <!-- Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase">Contact</h2>
+        <br>
+        <!-- Section Content-->
+        <!-- <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <form method=POST action="http://www.umich.edu/cgi-bin/htmail/cvwang@umich.edu">
+              <input type="text" placeholder="First" name="First name" />
+              <input type="text" placeholder="Last" name="Last name" />
+              <br><br>
+              <input type="text" placeholder="Email" name="from" />
+              <br><br>
+              <input type="text" placeholder="Subject" name="subject" />
+              <br><br>
+              <input name=ccme type=checkbox checked> Send me a copy of this message
+              <p>
+                <textarea placeholder="Message" name="body" rows="10" cols="90"></textarea>
+                <br>
+                <input type="submit" value="SEND" />
+              </p>
+            </form>
+          </div>
+        </div> -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7">
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- * * SB Forms Contact Form * *-->
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- This form is pre-integrated with SB Forms.-->
+              <!-- To make this form functional, sign up at-->
+              <!-- https://startbootstrap.com/solution/contact-forms-->
+              <!-- to get an API token!-->
+              <!-- <form id="contactForm" data-sb-form-api-token="API_TOKEN"></form> -->
+              <form method=POST action="http://www.umich.edu/cgi-bin/htmail/cvwang@umich.edu">
+                  <!-- Name input-->
+                  <div class="form-floating mb-3">
+                      <input class="form-control" type="text" name="First name" placeholder="Enter your name..." data-sb-validations="required" />
+                      <label for="name">First name</label>
+                      <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" type="text" name="Last name" placeholder="Enter your name..." data-sb-validations="required" />
+                    <label for="name">Last name</label>
+                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                  </div>
+                  <!-- Email address input-->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" type="email" name="from" placeholder="name@example.com" data-sb-validations="required,email"/>
+                    <!-- <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" /> -->
+                      <label for="email">Email address</label>
+                      <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                      <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" type="text" name="subject" placeholder="Enter your subject..." data-sb-validations="required"/>
+                    <!-- <input class="form-control" id="subject" type="text" placeholder="Enter your name..." data-sb-validations="required" /> -->
+                    <label for="subject">Subject</label>
+                    <div class="invalid-feedback" data-sb-feedback="name:required">A subject is required.</div>
+                  </div>
+                  <!-- Phone number input-->
+                  <!-- <div class="form-floating mb-3">
+                      <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                      <label for="phone">Phone number</label>
+                      <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                  </div> -->
+                  <!-- Message input-->
+                  <div class="form-floating mb-3">
+                      <textarea class="form-control" type="text" name="body" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                      <label for="message">Message</label>
+                      <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                  </div>
+                  <!-- Submit success message-->
+                  <!---->
+                  <!-- This is what your users will see when the form-->
+                  <!-- has successfully submitted-->
+                  <div class="d-none" id="submitSuccessMessage">
+                      <div class="text-center mb-3">
+                          <div class="fw-bolder">Form submission successful!</div>
+                          <!-- To activate this form, sign up at
+                          <br />
+                          <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a> -->
+                      </div>
+                  </div>
+                  <!-- Submit error message-->
+                  <!---->
+                  <!-- This is what your users will see when there is-->
+                  <!-- an error submitting the form-->
+                  <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                  <!-- Submit Button-->
+                  <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- <p>MY GF <a href="https://www.instagram.com/carmenhuang__/">CARMINA</a>!!! 😁❤️🥵</p> -->
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 
   </body>
 </html>
