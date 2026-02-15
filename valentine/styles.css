@@ -187,10 +187,11 @@ body {
   height: 0;
   border-left: 90px solid transparent;
   border-right: 90px solid transparent;
-  border-top: 60px solid var(--rose);
+  border-top: 40px solid var(--rose);
   filter: brightness(1.1);
   transition: transform 0.5s ease;
   transform-origin: top center;
+  z-index: 1;
 }
 
 .card.opened .envelope-flap {
@@ -202,7 +203,7 @@ body {
   bottom: 0;
   left: 0;
   width: 180px;
-  height: 80px;
+  height: 120px;
   background: linear-gradient(180deg, var(--coral) 0%, var(--deep-rose) 100%);
   border-radius: 0 0 8px 8px;
   display: flex;
