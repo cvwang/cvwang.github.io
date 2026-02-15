@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💕 For Carmen — Valentine's Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hearts-bg" aria-hidden="true"></div>
+
+  <main class="container">
+    <header class="hero">
+      <h1 class="title">Carmen, will you be my Valentine?</h1>
+      <p class="subtitle">Happy Valentine's Day 💖</p>
+    </header>
+
+    <section class="card-section">
+      <p class="hint">👆 Click the envelope to open your valentine</p>
+      <div class="card-wrapper" id="cardWrapper">
+        <div class="card" id="card">
+          <div class="card-front">
+            <div class="envelope">
+              <div class="envelope-flap"></div>
+              <div class="envelope-body">
+                <span class="heart-icon">💌</span>
+                <p>For Carmen</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-message">
+              <h2>To my favorite person,</h2>
+              <p>You make every day feel like Valentine's Day. Thank you for being you — your smile, your laugh, and your heart mean the world to me.</p>
+              <p class="sign-off">Forever yours 💕</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ask-buttons" id="askButtons">
+        <button type="button" class="btn btn-yes" id="btnYes">Yes! 💕</button>
+        <button type="button" class="btn btn-no" id="btnNo">No</button>
+      </div>
+      <div class="yes-response hidden" id="yesResponse">
+        <p class="yes-message">Yay! You make me so happy. Happy Valentine's Day, Carmen! 💖</p>
+      </div>
+    </section>
+
+    <section class="hearts-play">
+      <p class="play-hint">Click anywhere to leave a heart!</p>
+      <div class="heart-trail" id="heartTrail"></div>
+    </section>
+
+    <footer class="footer">
+      <p>Made with love for Carmen</p>
+      <p><a href="../index.html" class="back-link">← Back to main site</a></p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
