@@ -1,30 +1,140 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="cgb.css" rel="stylesheet" type="text/css">
-  </head>
-  <title>Charles Wang</title>
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="starter-template.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container" id="no-nav-container">
-      <h1>8x8x8 3D LED Cube</h1>
-      <p>Video of our 8x8x8 LED Cube right the day before our presentation date.</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/tT8K8eu9Nfg" frameborder="0" allowfullscreen></iframe>
-      <p>Photos:</p>
-      <table border="0" width="700">
-        <tbody>
-          <tr>
-            <td width="690">
-              <div style="height: 700px"><img src="res/cube.jpg" style="height:100%"></div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <!-- /.container -->
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="8×8×8 LED Cube — Charles Wang">
+  <link rel="icon" href="res/icon.ico">
+  <title>LED Cube &middot; Charles Wang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 2.5rem;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: var(--text); }
+
+    .cube-meta {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .cube-desc {
+      font-size: 1.0125rem;
+      color: #374151;
+      line-height: 1.8;
+      max-width: 620px;
+      margin-bottom: 2.5rem;
+    }
+
+    .cube-video {
+      width: 100%;
+      max-width: 640px;
+      aspect-ratio: 16 / 9;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .cube-photo {
+      width: 100%;
+      max-width: 640px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      display: block;
+    }
+
+    .media-label {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
+    }
+
+    .video-thumb-link {
+      display: block;
+      max-width: 640px;
+      margin-bottom: 2.5rem;
+      text-decoration: none;
+    }
+
+    .video-thumb {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      background: #000;
+    }
+
+    .video-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+
+    .video-thumb:hover img { opacity: 0.7; }
+
+    .video-play {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-name" href="index.html">Charles Wang</a>
+  </nav>
+
+  <main>
+    <a class="back-link" href="index.html">&#8592; Back</a>
+
+    <p class="section-label">// projects</p>
+    <h1>8&times;8&times;8 LED Cube</h1>
+    <p class="cube-meta">2016 &middot; Hardware &middot; University of Michigan</p>
+    <p class="cube-desc">
+      Built a 512-LED cube as part of a team of four at the University of Michigan.
+      Programmed an FPGA board in assembly to render and animate two-variable mathematical functions
+      across the 3D LED grid. Completed the day before our final presentation.
+    </p>
+
+    <p class="media-label">// demo</p>
+    <a href="https://www.youtube.com/watch?v=tT8K8eu9Nfg" target="_blank" rel="noopener" class="video-thumb-link">
+      <div class="video-thumb">
+        <img src="https://img.youtube.com/vi/tT8K8eu9Nfg/hqdefault.jpg" alt="8x8x8 LED Cube demo video">
+        <div class="video-play">&#9654;</div>
+      </div>
+    </a>
+
+    <p class="media-label">// photo</p>
+    <img class="cube-photo" src="res/cube.jpg" alt="8x8x8 LED Cube">
+
+  </main>
+
+</body>
 </html>
