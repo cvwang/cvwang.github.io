@@ -86,11 +86,12 @@ hr.divider {
 /* ── Typography ── */
 .section-label {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
+  font-weight: 500;
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.75rem;
 }
 
 h1 {
@@ -247,6 +248,16 @@ h2 {
   font-weight: 600;
   font-size: 0.9375rem;
   margin-bottom: 0.2rem;
+}
+
+.inv-name a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.inv-name a:hover {
+  color: var(--accent);
 }
 
 .inv-stage {
