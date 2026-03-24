@@ -22,7 +22,33 @@
       <li><a href="#writing">Writing</a></li>
       <li><a href="#projects">Projects</a></li>
     </ul>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <div class="nav-mobile-menu" aria-hidden="true">
+    <a href="#experience">Experience</a>
+    <a href="#investments">Investments</a>
+    <a href="#writing">Writing</a>
+    <a href="#projects">Projects</a>
+  </div>
+  <script>
+    const hamburger = document.querySelector('.nav-hamburger');
+    const mobileMenu = document.querySelector('.nav-mobile-menu');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !open);
+      mobileMenu.setAttribute('aria-hidden', open);
+      mobileMenu.classList.toggle('open', !open);
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        mobileMenu.classList.remove('open');
+      });
+    });
+  </script>
 
   <main id="top">
 
