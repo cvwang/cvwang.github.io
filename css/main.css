@@ -75,6 +75,7 @@ main {
 
 section {
   margin-bottom: 5rem;
+  scroll-margin-top: 72px;
 }
 
 hr.divider {
