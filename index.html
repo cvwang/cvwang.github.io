@@ -48,6 +48,13 @@
         mobileMenu.classList.remove('open');
       });
     });
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 600) {
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        mobileMenu.classList.remove('open');
+      }
+    });
   </script>
 
   <main id="top">
