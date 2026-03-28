@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生日快乐 — Mom & Dad 🏮</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Confetti canvas -->
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <!-- Floating balloons -->
+  <div class="balloons-bg" aria-hidden="true" id="balloonsContainer"></div>
+
+  <main class="container">
+
+    <header class="hero">
+      <p class="chinese-greeting">生日快乐</p>
+      <div class="age-badges">
+        <div class="age-badge badge-mom">
+          <span class="age-num">60</span>
+          <span class="age-chinese">六十</span>
+        </div>
+        <div class="age-divider">福</div>
+        <div class="age-badge badge-dad">
+          <span class="age-num">63</span>
+          <span class="age-chinese">六十三</span>
+        </div>
+      </div>
+      <h1 class="title">Happy Birthday, Mom & Dad!</h1>
+      <p class="subtitle">两位了不起的人 · Two incredible people · Two milestones worth celebrating</p>
+    </header>
+
+    <!-- Photo carousel -->
+    <section class="carousel-section">
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Add your photos here: duplicate a .carousel-slide for each image -->
+          <div class="carousel-slide">
+            <img src="photo1.jpg" alt="Family photo 1" onerror="this.closest('.carousel-slide').classList.add('slide-error')">
+            <div class="slide-placeholder"><span>📸</span></div>
+          </div>
+          <div class="carousel-slide">
+            <img src="photo2.jpg" alt="Family photo 2" onerror="this.closest('.carousel-slide').classList.add('slide-error')">
+            <div class="slide-placeholder"><span>📸</span></div>
+          </div>
+          <div class="carousel-slide">
+            <img src="photo3.jpg" alt="Family photo 3" onerror="this.closest('.carousel-slide').classList.add('slide-error')">
+            <div class="slide-placeholder"><span>📸</span></div>
+          </div>
+        </div>
+        <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous photo">&#8249;</button>
+        <button class="carousel-btn next" id="carouselNext" aria-label="Next photo">&#8250;</button>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <!-- Birthday cards -->
+    <section class="cards-section">
+      <div class="message-card card-mom" id="cardMom">
+        <div class="card-inner">
+          <div class="card-label">For Mom 💐</div>
+          <p class="card-hint">Click to open your card 🎁</p>
+          <div class="card-content hidden" id="cardContentMom">
+            <h2>亲爱的妈妈，</h2>
+            <p>I know I missed your 60th earlier this month — and I'm sorry for that. But a milestone this big deserves its own celebration, even if it's a little late.</p>
+            <p>六十岁 — 一甲子 — marks a full and meaningful life cycle. You’ve lived it with grace, love, and strength—so much to celebrate today.</p>
+            <p>Thank you for being the heart of our family. Everything good in us came from you.</p>
+            <p class="sign-off">满心爱意，<br><span class="signature mom-sig">Charles & Olivia 🌸</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-card card-dad" id="cardDad">
+        <div class="card-inner">
+          <div class="card-label">For Dad 🎂</div>
+          <p class="card-hint">Click to open your card 🎁</p>
+          <div class="card-content hidden" id="cardContentDad">
+            <h2>亲爱的爸爸，</h2>
+            <p>Today you turn 63 — and every single one of those years has shaped who you are: a wonderful father, a constant source of strength, and one of the best people I know.</p>
+            <p>Thank you for everything you've sacrificed, every lesson you've taught, and every moment you've been there. We are so lucky to call you our dad.</p>
+            <p class="sign-off">满心爱意，<br><span class="signature">Charles & Olivia 🏮</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="chinese-footer">岁岁平安，年年有今日</p>
+      <p>Made with love for two very special birthdays 🏮</p>
+      <p><a href="../index.html" class="back-link">← Back to main site</a></p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
